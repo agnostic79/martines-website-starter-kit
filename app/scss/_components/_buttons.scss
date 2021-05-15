@@ -1,0 +1,46 @@
+//--------------BUTTONS-------------------
+
+.btn {
+  font-family: $default-font;
+  font-size: 1.4rem;
+  padding: 1em 3em;
+  text-align: center;
+  line-height: 1.1;
+  min-width: 16rem;
+  cursor: pointer;
+  transition: 0.25s cubic-bezier(0.08, 0.03, 0.22, 0.87);
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.btn--primary {
+  background: $color-accent;
+  color: $color-white;
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background: darken($color-accent, 10);
+  }
+}
+
+.btn--secondary {
+  background: $color-black;
+  color: $color-white;
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background: lighten($color-black, 10);
+  }
+}
+
+.btn--outline {
+  border: 1px solid $color-accent;
+  background-color: transparent;
+  color: $color-accent;
+  font-weight: 500;
+  &:hover {
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+    color: $color-white;
+  }
+}

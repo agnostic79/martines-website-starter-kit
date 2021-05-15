@@ -1,0 +1,32 @@
+.p-container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+
+  max-width: 1600px;
+
+  @media (max-width: 1599px) {
+    max-width: 1320px;
+  }
+
+  @media (max-width: 1399px) {
+    max-width: 1140px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 720px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 540px;
+  }
+}
+
+.p-section {
+  padding: 10rem 0;
+}

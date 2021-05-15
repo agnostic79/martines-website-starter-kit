@@ -1,88 +1,14 @@
-@import "vars";
-@import "fonts";
-@import "libs";
+@import "01-vars";
+@import "02-fonts";
+@import "03-libs";
+@import "04-base";
+@import "05-utils";
+@import "06-layout";
 
-/* -------- BASE --------- */
+// Components
+@import "_components/buttons";
 
-::placeholder {
-  color: #666;
-}
+// Blocks
 
-::selection {
-  background-color: $accent;
-  color: #fff;
-}
-
-html {
-  //text-rendering enchasements
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  font-size: 16px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.65;
-  font-family: $default-font;
-  overflow-x: hidden;
-  color: $text;
-
-  /* Disables pull-to-refresh and overscroll glow effect.
-     Still keeps swipe navigations. */
-  overscroll-behavior-y: none;
-}
-
-input,
-textarea {
-  border: #666 1px solid;
-  outline: none;
-  &:focus:required:invalid {
-    border-color: red;
-  }
-  &:required:valid {
-    border-color: green;
-  }
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/* -------- UTILS --------- */
-
-.hidden {
-  display: none;
-}
-
-.invisible {
-  visibility: hidden;
-  opacity: 0;
-}
-
-//clearfix
-.cf::before,
-.cf::after {
-  content: " ";
-  display: table;
-}
-.cf::after {
-  clear: both;
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  &.img-width {
-    width: 100%;
-  }
-}
-
-.text-center {
-  text-align: center;
-}
-
+//Additional media queries
 @import "media"; // Always at the end

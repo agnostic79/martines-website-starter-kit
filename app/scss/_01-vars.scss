@@ -1,10 +1,17 @@
 //fonts
-$default-font: "roboto-example", sans-serif;
+$default-font: "montserrat-p", sans-serif;
 
 //colors
-$color-accent: orange;
+$color-accent: #c20022;
+$color-accent-darker: #720014;
+$color-accent-lighter: #ef233c;
+
+$color-black: #23232a;
+$color-dark-gray: #39393f;
+$color-mid-gray: #919194;
+$color-light-gray: #c8c8ca;
+$color-lighter-gray: #e9e9ea;
 $color-white: #fff;
-$color-text: #333;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
